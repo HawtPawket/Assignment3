@@ -16,9 +16,33 @@ print(venue)
 # enhance the program to recommend additional facilities like "audio system"
 # or "projector" based on the number of attendees.
 
+attendees = int(input("Enter number of attendees: "))
+venue = "large hall" if attendees > 100 else "conference room"
+print(venue)
+print("audio system") if attendees > 100 else print("projector")
+
+
+
+# Task 3: Catering Choices
+
+# Ask the user if they want "vegetarian" food. 
+# Recommend "Veggie Delight Caterers" if yes, otherwise 
+# recommend "Gourmet Meals Caterers".
+
+
 
 attendees = int(input("Enter number of attendees: "))
 venue = "large hall" if attendees > 100 else "conference room"
 print(venue)
-if attendees > 100 :print("audio system")
+print("audio system") if attendees > 100 else print("projector")
+
+food = input("Would you like Vegetarian food")
+
+if food == "yes":
+    print("I recommend Veggie Delight Caterers")
+if food =="no":
+    print("I recommend Gourmet Meals Caterers")
+
+
+
 
